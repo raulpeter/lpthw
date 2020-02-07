@@ -20,7 +20,7 @@ class Engine(object):
 class Death(Scene):
     quips = ['you died','hello']
     def enter(self):
-        print(Death.quips[randint(0,len(self.quips-1))])
+        print(Death.quips[randint(0,len(self.quips)-1)])
         exit(1)
 class CentralCorridor(Scene):
     def enter(self):
